@@ -20,7 +20,9 @@
 	
 	<br><br>
 	
-	Country: <form:select path="country">
+	Country: 
+	
+	<form:select path="country">
 	
 		<form:options items="${student.countryOptions}"/>
 	
@@ -32,6 +34,12 @@
 	Swift <form:radiobutton path="favoriteLanguage" value="Swift"/>
 	C++ <form:radiobutton path="favoriteLanguage" value="C++"/>
 	PHP <form:radiobutton path="favoriteLanguage" value="PHP"/>
+	
+	<br><br>
+	
+	Linux <form:checkbox path="operatingSystems" value="Linux"/>
+	Mac OS <form:checkbox path="operatingSystems" value="Mac OS"/>
+	MS Windows <form:checkbox path="operatingSystems" value="MS Windows"/>
 	
 	<br><br>
 	
